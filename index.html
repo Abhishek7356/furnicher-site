@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furnicher</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                        <img src="https://www.pinclipart.com/picdir/big/176-1764510_shopping-cart-shopping-icon-png-image-shopping-cart.png"
+                            height="40px" alt="MDB Logo" loading="lazy" />
+                    </a>
+                    <!-- Left links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My cart<i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center">
+                    <!-- Icon -->
+                    <a class="text-reset me-3" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+
+                    <!-- Notifications -->
+                    <div class="dropdown">
+                        <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="#">Some news</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Another news</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Avatar -->
+                    <div class="dropdown">
+                        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                            id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="https://th.bing.com/th/id/R.88f4f67fe36423a9f099e32757f61acc?rik=CLtRO2eGANx4Vw&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_329115.png&ehk=mXoK%2be700RIpbejgADkfZYJSnzVqJhHHmQWdguPy40k%3d&risl=&pid=ImgRaw&r=0"
+                                class="rounded-circle" height="25" alt="" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li>
+                                <a class="dropdown-item" href="#">My profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Right elements -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <section>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <img src="https://i.pinimg.com/originals/b4/56/d2/b456d2c54af065f06c128c6f221ce536.jpg"
+                                class="d-block w-100" height="510px" alt="...">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+                                <h5>Nilkamal Bright Leatherette 3 Seater Sofa (Maroon Beige)</h5>
+                                <p>Buy Nilkamal Bright 3 Seater Sofa (Maroon Beige) online at Nilkamal Furniture. Size
+                                    of 194 x 86 cm & upto @33% off. Free shipping in India - Nilkamal Furniture</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://th.bing.com/th/id/OIP.RoO6FdVfOSeacSSE8KtGMgHaEK?pid=ImgDet&rs=1"
+                                class="d-block w-100" height="510px" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nilkamal Zoolu Solid Wood Coffee Table (Mahogany)</h5>
+                                <p>Buy Nilkamal Zoolu Solid Wood Coffee Table (Mahogany) online in India. Explore the
+                                    wide range of coffee tables at Nilkamal Furniture. Avail fast & free shipping in
+                                    India.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images3.alphacoders.com/190/thumb-1920-190239.jpg" height="510px"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nilkamal Russo Leatherette 1 Seater Sofa (Cola Black)</h5>
+                                <p>Buy Nilkamal Russo 1 Seater Sofa (Cola Black) online in India at Nilkamal Furniture.
+                                    Size of 98 x 68 cm & with weight of 29 kg. Free shipping in India - Nilkamal
+                                    Furniture</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card shadow p" style="width: 18rem;">
+                        <img src="https://lmsin.net/cdn-cgi/image/h=750,w=750,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/homecentre/1000009406370-1000009406369_02-2100.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Helios Galten Faux Leather 1-Seater Recliner - Brown</h5>
+                            <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i
+                                class="fa-solid fa-star" style="color: #d5e21d;"></i><i
+                                class="fa-solid fa-star-half-stroke" style="color: #d5e21d;"></i> <span
+                                class="badge bg-secondary">4.5</span>
+                            <h6 class="my-2">₹
+                                17999</h6>
+                            <a href="#" class="btn btn-primary">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop1">
+                                Overview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Helios Galten Faux Leather
+                                    1-Seater Recliner - Brown</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>₹
+                                    17999</h6>
+                                <p>The primary material of this recliner is made of pinewood which is softwood with a
+                                    great deal of stiffness and resistance to shock, thereby, making it easy to work
+                                    with. It is lighter with a smooth finish, ensuring consistency and aesthetic good
+                                    look that makes the furniture lightweight for easy portability. With high strength
+                                    and stiffness to weight ratios, plywood is very cost-effective to use in structural
+                                    applications. The upholstery is faux leather which is man-made with high tensile
+                                    strength and easy cleanability with a softer finish. It is much more affordable than
+                                    real leather and lasts longer. Premium quality high-resilient foam is used for
+                                    making of the recliner. The back is filled with a non-siliconised virgin polyfill
+                                    for greater back support & comfort. No-sag springs that provide high resilience and
+                                    durability are used in the construction of the recliner. The backrest comes with
+                                    high elastic nylon webbing for greater support and comfort. The recliner of depth
+                                    102 cm that can go up to 168cm when reclining fully. Lumbar support is provided for
+                                    seating comfortably for a long duration. There are three reclining positions in this
+                                    recliner - Sitting, Reading and Watching TV. The open angles promote most
+                                    ergonomically suitable position for the longer sitting duration. The recliner
+                                    mechanism is built of leggaton plat and tested for 10000 cycles. The modern-looking
+                                    recliner with American comfort has a minimalistic look that can blend easily with
+                                    your living room.r</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="https://lmsin.net/cdn-cgi/image/h=750,w=750,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/homecentre/1000008898210-1000008898209_02-2100.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mexico Fabric 2-Seater Sofa - Beige</h5>
+                            <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i
+                                class="fa-solid fa-star" style="color: #d5e21d;"></i> <span
+                                class="badge bg-secondary">4.1</span>
+                            <h6 class="my-2">₹
+                                11999
+                            </h6>
+                            <a href="#" class="btn btn-primary">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop2">
+                                Overview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Helios Galten Faux Leather
+                                    1-Seater Recliner - Brown</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>₹
+                                    17999</h6>
+                                <p>The primary material of this recliner is made of pinewood which is softwood with a
+                                    great deal of stiffness and resistance to shock, thereby, making it easy to work
+                                    with. It is lighter with a smooth finish, ensuring consistency and aesthetic good
+                                    look that makes the furniture lightweight for easy portability. With high strength
+                                    and stiffness to weight ratios, plywood is very cost-effective to use in structural
+                                    applications. The upholstery is faux leather which is man-made with high tensile
+                                    strength and easy cleanability with a softer finish. It is much more affordable than
+                                    real leather and lasts longer. Premium quality high-resilient foam is used for
+                                    making of the recliner. The back is filled with a non-siliconised virgin polyfill
+                                    for greater back support & comfort. No-sag springs that provide high resilience and
+                                    durability are used in the construction of the recliner. The backrest comes with
+                                    high elastic nylon webbing for greater support and comfort. The recliner of depth
+                                    102 cm that can go up to 168cm when reclining fully. Lumbar support is provided for
+                                    seating comfortably for a long duration. There are three reclining positions in this
+                                    recliner - Sitting, Reading and Watching TV. The open angles promote most
+                                    ergonomically suitable position for the longer sitting duration. The recliner
+                                    mechanism is built of leggaton plat and tested for 10000 cycles. The modern-looking
+                                    recliner with American comfort has a minimalistic look that can blend easily with
+                                    your living room.r</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow " style="width: 18rem;">
+                        <img src="https://lmsin.net/cdn-cgi/image/h=750,w=750,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/homecentre/1000010959136-1000010959135_02-2100.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Apollo Faux Leather 2-Seater Recliner - Brown</h5>
+                            <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i
+                                class="fa-solid fa-star" style="color: #d5e21d;"></i> <i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <span class="badge bg-secondary">4.9</span>
+                            <h6 class="my-2">₹
+                                39999</h6>
+                                <a href="#" class="btn btn-primary">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop3">
+                                Overview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Helios Galten Faux Leather
+                                    1-Seater Recliner - Brown</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>₹
+                                    17999</h6>
+                                <p>The primary material of this recliner is made of pinewood which is softwood with a
+                                    great deal of stiffness and resistance to shock, thereby, making it easy to work
+                                    with. It is lighter with a smooth finish, ensuring consistency and aesthetic good
+                                    look that makes the furniture lightweight for easy portability. With high strength
+                                    and stiffness to weight ratios, plywood is very cost-effective to use in structural
+                                    applications. The upholstery is faux leather which is man-made with high tensile
+                                    strength and easy cleanability with a softer finish. It is much more affordable than
+                                    real leather and lasts longer. Premium quality high-resilient foam is used for
+                                    making of the recliner. The back is filled with a non-siliconised virgin polyfill
+                                    for greater back support & comfort. No-sag springs that provide high resilience and
+                                    durability are used in the construction of the recliner. The backrest comes with
+                                    high elastic nylon webbing for greater support and comfort. The recliner of depth
+                                    102 cm that can go up to 168cm when reclining fully. Lumbar support is provided for
+                                    seating comfortably for a long duration. There are three reclining positions in this
+                                    recliner - Sitting, Reading and Watching TV. The open angles promote most
+                                    ergonomically suitable position for the longer sitting duration. The recliner
+                                    mechanism is built of leggaton plat and tested for 10000 cycles. The modern-looking
+                                    recliner with American comfort has a minimalistic look that can blend easily with
+                                    your living room.r</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="https://lmsin.net/cdn-cgi/image/h=750,w=750,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/homecentre/1000008482588-1000008482588-1202_01-2100.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Helsinki Leather 2-Seater Electric Recliner - Brown</h5>
+                            <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i
+                                class="fa-solid fa-star" style="color: #d5e21d;"></i><i
+                                class="fa-solid fa-star-half-stroke" style="color: #d5e21d;"></i> <span
+                                class="badge bg-secondary">4.7</span>
+                            <h6 class="my-2">₹
+                                59999</h6>
+                                <a href="#" class="btn btn-primary">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop4">
+                                Overview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Helios Galten Faux Leather
+                                    1-Seater Recliner - Brown</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>₹
+                                    17999</h6>
+                                <p>The primary material of this recliner is made of pinewood which is softwood with a
+                                    great deal of stiffness and resistance to shock, thereby, making it easy to work
+                                    with. It is lighter with a smooth finish, ensuring consistency and aesthetic good
+                                    look that makes the furniture lightweight for easy portability. With high strength
+                                    and stiffness to weight ratios, plywood is very cost-effective to use in structural
+                                    applications. The upholstery is faux leather which is man-made with high tensile
+                                    strength and easy cleanability with a softer finish. It is much more affordable than
+                                    real leather and lasts longer. Premium quality high-resilient foam is used for
+                                    making of the recliner. The back is filled with a non-siliconised virgin polyfill
+                                    for greater back support & comfort. No-sag springs that provide high resilience and
+                                    durability are used in the construction of the recliner. The backrest comes with
+                                    high elastic nylon webbing for greater support and comfort. The recliner of depth
+                                    102 cm that can go up to 168cm when reclining fully. Lumbar support is provided for
+                                    seating comfortably for a long duration. There are three reclining positions in this
+                                    recliner - Sitting, Reading and Watching TV. The open angles promote most
+                                    ergonomically suitable position for the longer sitting duration. The recliner
+                                    mechanism is built of leggaton plat and tested for 10000 cycles. The modern-looking
+                                    recliner with American comfort has a minimalistic look that can blend easily with
+                                    your living room.r</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-3">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="https://lmsin.net/cdn-cgi/image/h=750,w=750,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/homecentre/1000009406370-1000009406369_02-2100.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Helios Galten Faux Leather 1-Seater Recliner - Brown</h5>
+                            <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i
+                                class="fa-solid fa-star" style="color: #d5e21d;"></i><i
+                                class="fa-solid fa-star-half-stroke" style="color: #d5e21d;"></i> <span
+                                class="badge bg-secondary">4.7</span>
+                            <h6 class="my-2">₹
+                                17999</h6>
+                                <a href="#" class="btn btn-primary">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop5">
+                                Overview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Helios Galten Faux Leather
+                                    1-Seater Recliner - Brown</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>₹
+                                    17999</h6>
+                                <p>The primary material of this recliner is made of pinewood which is softwood with a
+                                    great deal of stiffness and resistance to shock, thereby, making it easy to work
+                                    with. It is lighter with a smooth finish, ensuring consistency and aesthetic good
+                                    look that makes the furniture lightweight for easy portability. With high strength
+                                    and stiffness to weight ratios, plywood is very cost-effective to use in structural
+                                    applications. The upholstery is faux leather which is man-made with high tensile
+                                    strength and easy cleanability with a softer finish. It is much more affordable than
+                                    real leather and lasts longer. Premium quality high-resilient foam is used for
+                                    making of the recliner. The back is filled with a non-siliconised virgin polyfill
+                                    for greater back support & comfort. No-sag springs that provide high resilience and
+                                    durability are used in the construction of the recliner. The backrest comes with
+                                    high elastic nylon webbing for greater support and comfort. The recliner of depth
+                                    102 cm that can go up to 168cm when reclining fully. Lumbar support is provided for
+                                    seating comfortably for a long duration. There are three reclining positions in this
+                                    recliner - Sitting, Reading and Watching TV. The open angles promote most
+                                    ergonomically suitable position for the longer sitting duration. The recliner
+                                    mechanism is built of leggaton plat and tested for 10000 cycles. The modern-looking
+                                    recliner with American comfort has a minimalistic look that can blend easily with
+                                    your living room.r</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="https://lmsin.net/cdn-cgi/image/h=750,w=750,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/homecentre/1000008898210-1000008898209_02-2100.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mexico Fabric 2-Seater Sofa - Beige</h5>
+                            <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i
+                                class="fa-solid fa-star" style="color: #d5e21d;"></i><i
+                                class="fa-solid fa-star-half-stroke" style="color: #d5e21d;"></i> <span
+                                class="badge bg-secondary">4.7</span>
+                            <h6 class="my-2">₹
+                                11999
+                            </h6>
+                            <a href="#" class="btn btn-primary">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop6">
+                                Overview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Helios Galten Faux Leather
+                                    1-Seater Recliner - Brown</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>₹
+                                    17999</h6>
+                                <p>The primary material of this recliner is made of pinewood which is softwood with a
+                                    great deal of stiffness and resistance to shock, thereby, making it easy to work
+                                    with. It is lighter with a smooth finish, ensuring consistency and aesthetic good
+                                    look that makes the furniture lightweight for easy portability. With high strength
+                                    and stiffness to weight ratios, plywood is very cost-effective to use in structural
+                                    applications. The upholstery is faux leather which is man-made with high tensile
+                                    strength and easy cleanability with a softer finish. It is much more affordable than
+                                    real leather and lasts longer. Premium quality high-resilient foam is used for
+                                    making of the recliner. The back is filled with a non-siliconised virgin polyfill
+                                    for greater back support & comfort. No-sag springs that provide high resilience and
+                                    durability are used in the construction of the recliner. The backrest comes with
+                                    high elastic nylon webbing for greater support and comfort. The recliner of depth
+                                    102 cm that can go up to 168cm when reclining fully. Lumbar support is provided for
+                                    seating comfortably for a long duration. There are three reclining positions in this
+                                    recliner - Sitting, Reading and Watching TV. The open angles promote most
+                                    ergonomically suitable position for the longer sitting duration. The recliner
+                                    mechanism is built of leggaton plat and tested for 10000 cycles. The modern-looking
+                                    recliner with American comfort has a minimalistic look that can blend easily with
+                                    your living room.r</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow " style="width: 18rem;">
+                        <img src="https://lmsin.net/cdn-cgi/image/h=750,w=750,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/homecentre/1000010959136-1000010959135_02-2100.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Apollo Faux Leather 2-Seater Recliner - Brown</h5>
+                            <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i
+                                class="fa-solid fa-star" style="color: #d5e21d;"></i><i
+                                class="fa-solid fa-star-half-stroke" style="color: #d5e21d;"></i> <span
+                                class="badge bg-secondary">4.7</span>
+                            <h6 class="my-2">₹
+                                39999</h6>
+                                <a href="#" class="btn btn-primary">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop7">
+                                Overview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Helios Galten Faux Leather
+                                    1-Seater Recliner - Brown</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>₹
+                                    17999</h6>
+                                <p>The primary material of this recliner is made of pinewood which is softwood with a
+                                    great deal of stiffness and resistance to shock, thereby, making it easy to work
+                                    with. It is lighter with a smooth finish, ensuring consistency and aesthetic good
+                                    look that makes the furniture lightweight for easy portability. With high strength
+                                    and stiffness to weight ratios, plywood is very cost-effective to use in structural
+                                    applications. The upholstery is faux leather which is man-made with high tensile
+                                    strength and easy cleanability with a softer finish. It is much more affordable than
+                                    real leather and lasts longer. Premium quality high-resilient foam is used for
+                                    making of the recliner. The back is filled with a non-siliconised virgin polyfill
+                                    for greater back support & comfort. No-sag springs that provide high resilience and
+                                    durability are used in the construction of the recliner. The backrest comes with
+                                    high elastic nylon webbing for greater support and comfort. The recliner of depth
+                                    102 cm that can go up to 168cm when reclining fully. Lumbar support is provided for
+                                    seating comfortably for a long duration. There are three reclining positions in this
+                                    recliner - Sitting, Reading and Watching TV. The open angles promote most
+                                    ergonomically suitable position for the longer sitting duration. The recliner
+                                    mechanism is built of leggaton plat and tested for 10000 cycles. The modern-looking
+                                    recliner with American comfort has a minimalistic look that can blend easily with
+                                    your living room.r</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="https://lmsin.net/cdn-cgi/image/h=750,w=750,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/homecentre/1000008482588-1000008482588-1202_01-2100.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Helsinki Leather 2-Seater Electric Recliner - Brown</h5>
+                            <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i
+                                class="fa-solid fa-star" style="color: #d5e21d;"></i><i
+                                class="fa-solid fa-star-half-stroke" style="color: #d5e21d;"></i> <span
+                                class="badge bg-secondary">4.7</span>
+                            <h6 class="my-2">₹
+                                59999</h6>
+                                <a href="#" class="btn btn-primary">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop8">
+                                Overview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Helios Galten Faux Leather
+                                    1-Seater Recliner - Brown</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>₹
+                                    17999</h6>
+                                <p>The primary material of this recliner is made of pinewood which is softwood with a
+                                    great deal of stiffness and resistance to shock, thereby, making it easy to work
+                                    with. It is lighter with a smooth finish, ensuring consistency and aesthetic good
+                                    look that makes the furniture lightweight for easy portability. With high strength
+                                    and stiffness to weight ratios, plywood is very cost-effective to use in structural
+                                    applications. The upholstery is faux leather which is man-made with high tensile
+                                    strength and easy cleanability with a softer finish. It is much more affordable than
+                                    real leather and lasts longer. Premium quality high-resilient foam is used for
+                                    making of the recliner. The back is filled with a non-siliconised virgin polyfill
+                                    for greater back support & comfort. No-sag springs that provide high resilience and
+                                    durability are used in the construction of the recliner. The backrest comes with
+                                    high elastic nylon webbing for greater support and comfort. The recliner of depth
+                                    102 cm that can go up to 168cm when reclining fully. Lumbar support is provided for
+                                    seating comfortably for a long duration. There are three reclining positions in this
+                                    recliner - Sitting, Reading and Watching TV. The open angles promote most
+                                    ergonomically suitable position for the longer sitting duration. The recliner
+                                    mechanism is built of leggaton plat and tested for 10000 cycles. The modern-looking
+                                    recliner with American comfort has a minimalistic look that can blend easily with
+                                    your living room.r</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-center text-white py-5">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Shopping cart.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>
