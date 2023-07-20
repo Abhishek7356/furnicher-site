@@ -6,3 +6,25 @@
     transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
+
+@media screen and (max-width: 600px) {
+    .carousel-item img{
+        height: 40vh;
+    }
+    .card-title{
+        font-size: 14px;
+    }
+    .card-body i{
+        font-size: 10px;
+    }
+    .badge{
+        font-size: 14px;
+    }
+    .price{
+        font-size: 12px;
+    }
+    .card-body .btn{
+        font-size: 10px;
+    }
+}
